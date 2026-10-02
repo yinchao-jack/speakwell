@@ -1,6 +1,22 @@
 # Speakwell · AI Speaking Coach
 
+![Speakwell brand cover](assets/cover-brand.png)
+
+![Learn from your world — Speakwell concept cover](assets/cover-learning.png)
+
 An interactive English-learning portfolio demo exploring AI × Education, learning science, and visual experience design.
+
+## Demo preview
+
+### Scenario practice
+
+![Speakwell speaking practice interface](assets/demo-practice.png)
+
+### Photo Learn
+
+![Speakwell Photo Learn interface](assets/demo-photo-learn.png)
+
+The covers illustrate the product concept; screenshots show the current interactive demo.
 
 ## Features
 
