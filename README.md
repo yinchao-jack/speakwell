@@ -18,6 +18,14 @@ An interactive English-learning portfolio demo exploring AI × Education, learni
 
 The covers illustrate the product concept; screenshots show the current interactive demo.
 
+## Local app entry
+
+- Open the app to see the sign-in screen; choose **Continue as guest** to use every demo feature.
+- Demo sign-in accepts a fictional email and a password of at least six characters. It does not create or authenticate an account; passwords are not stored or transmitted.
+- Learning Home provides feature entry points and recent practice records.
+- Profile includes language, appearance, a daily planning goal, data guidance and sign-out.
+- Open `mobile-preview.html` for an interactive phone-size preview.
+
 ## Features
 
 - Scenario-based English practice: daily conversation, job interviews, and travel.
@@ -29,7 +37,7 @@ The covers illustrate the product concept; screenshots show the current interact
 
 ## Demo scope
 
-This version uses curated dialogue, feedback, and photo vocabulary. It does not call a live AI service or recognize the contents of uploaded photos. Voice input and account authentication are not implemented. Figma account screens are separate design concepts.
+This version uses curated dialogue, feedback, and photo vocabulary. It does not call a live AI service or recognize the contents of uploaded photos. Voice input and real account authentication are not implemented. The local app includes a clearly labelled demo sign-in flow and guest access.
 
 ## Run locally
 
