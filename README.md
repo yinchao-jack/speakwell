@@ -6,51 +6,72 @@
 
 An interactive English-learning portfolio demo exploring AI × Education, learning science, and visual experience design.
 
-## Demo preview
+**[Open the interactive demo](https://speakwell-delta.vercel.app/)** on your phone or computer. Choose **Continue as guest / 游客访问** to explore all demo features.
 
-### Scenario practice
+## Demo Preview
 
-![Speakwell speaking practice interface](assets/demo-practice.png)
+### Mobile · Six screens
 
-### Photo Learn
+Login → Learning Home → Scenario Practice → Photo Learn → Learning Progress → Profile & Preferences.
 
-![Speakwell Photo Learn interface](assets/demo-photo-learn.png)
+![Six real iPhone screenshots of the latest Speakwell demo](assets/demo-mobile-overview.jpg)
 
-The covers illustrate the product concept; screenshots show the current interactive demo.
+These are screenshots captured on an iPhone, including its browser controls. The collage preserves the original screen content.
 
-## Local app entry
+### Desktop · Welcome & demo sign-in
 
-- Open the app to see the sign-in screen; choose **Continue as guest** to use every demo feature.
-- Demo sign-in accepts a fictional email and a password of at least six characters. It does not create or authenticate an account; passwords are not stored or transmitted.
-- Learning Home provides feature entry points and recent practice records.
-- Profile includes language, appearance, a daily planning goal, data guidance and sign-out.
-- Open `mobile-preview.html` for an interactive phone-size preview.
+![Speakwell desktop welcome and guest entry](assets/demo-desktop-login.png)
 
-## Features
+### Desktop · Learning Home
 
-- Scenario-based English practice: daily conversation, job interviews, and travel.
-- End-of-session feedback with grammar, vocabulary, and expression suggestions.
-- Learning progress dashboard and demonstration difficulty adjustments.
-- Photo Learn: upload a personal photo, explore bilingual scene vocabulary, hear phrases, and save words.
-- English / Simplified Chinese interface and light / dark themes.
-- Browser-local learning records and preferences.
+![Speakwell desktop learning home](assets/demo-desktop-home.png)
+
+### Desktop · Scenario Practice
+
+![Speakwell desktop scenario practice](assets/demo-desktop-practice.png)
+
+### Desktop · Photo Learn
+
+![Speakwell desktop photo vocabulary studio](assets/demo-desktop-photo-learn.png)
+
+The covers illustrate the product concept; the previews show the current interactive demo.
+
+## App flow & features
+
+- **Welcome:** demo sign-in, guest entry, and login/data guidance. Demo sign-in accepts a fictional email and a password of at least six characters; it does not create or authenticate an account. Passwords are neither stored nor transmitted.
+- **Learning Home:** feature shortcuts, a daily planning goal, and recent practice records.
+- **Scenario Practice:** text conversations for daily life, job interviews, and travel. Curated coach replies keep the conversation flowing without immediate correction.
+- **Session Feedback:** a demonstration score, strengths, a next-step focus, and grammar, vocabulary, and expression feedback cards. You can repeat the scenario or view progress.
+- **Photo Learn:** upload a personal photo, select a scene category, explore English/Chinese vocabulary and example sentences, hear phrases using browser text-to-speech, and save words.
+- **Learning Progress:** session totals, average scores, a score chart, practice history, sample learning patterns, and saved vocabulary.
+- **Profile & Preferences:** daily planning goal, English / Simplified Chinese interface, light / dark appearance, data guidance, and sign-out. Some learning examples remain in English in Chinese mode.
+- **Responsive layout:** desktop navigation and a mobile bottom navigation bar. Open `mobile-preview.html` locally for a phone-size interactive preview.
 
 ## Demo scope
 
-This version uses curated dialogue, feedback, and photo vocabulary. It does not call a live AI service or recognize the contents of uploaded photos. Voice input and real account authentication are not implemented. The local app includes a clearly labelled demo sign-in flow and guest access.
+This is a portfolio prototype built with HTML, CSS, and JavaScript. It uses curated dialogue, sample feedback, and scene vocabulary; it does not currently call a live AI service.
+
+- Uploaded photos are previewed locally. Vocabulary and label positions come from the selected scene category, not recognition of the image's contents. Image recognition and image generation are not implemented.
+- Feedback examples do not evaluate the learner's actual text. Scores and practice minutes are demonstration estimates, not validated proficiency measurements or a real timer.
+- Completing a demo session increases the demonstration difficulty by 0.5, up to Level 5. This is not yet a performance-based adaptive algorithm.
+- The initial four practice records and learning-pattern summaries are samples. Newly completed demo sessions and saved words are stored in the current browser.
+- The microphone button is a placeholder; voice input is not implemented. Phrase playback depends on browser text-to-speech support and available voices.
+- The daily goal is a planning preference, without automatic timing or reminders. Real accounts, cloud storage, and cross-device synchronization are not implemented.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve this folder with any static web server.
+Open `index.html` in a browser, or serve this folder with any static web server. No build step or API key is needed for the demo.
 
-## Deploy to Vercel
+## Deployment
 
-Import this repository into Vercel. Choose **Other** as the framework, keep the root directory at the repository root, and use no build command. The site entry point is `index.html`.
+The current public demo is hosted on [Vercel](https://speakwell-delta.vercel.app/) using a manual folder deployment. GitHub updates do not currently trigger an automatic deployment.
+
+To enable automatic deployments later, import this repository into Vercel, choose **Other** as the framework, keep the root directory at the repository root, and leave the build command empty. The entry point is `index.html`.
 
 ## Learning design
 
-The prototype explores comprehensible input, delayed feedback, and contextual vocabulary learning. Scores and difficulty changes are demonstration heuristics; the project does not claim validated learning outcomes.
+The prototype explores comprehensible input, delayed feedback, and contextual vocabulary learning. These principles guide the interaction design; the project does not claim validated learning outcomes.
 
 ## Data
 
-Practice records and preferences are stored in localStorage in each browser. Uploaded photos remain in the browser in this demo. Google Fonts is used for typography.
+Learning records, saved words, and preferences use localStorage in each browser. Guest and demo sign-in share those local records. Access state uses sessionStorage; signing out retains learning records. Uploaded photos stay in memory in the browser and are lost on reload. Google Fonts is used for typography.
